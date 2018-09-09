@@ -9,7 +9,7 @@ docker run -d --network=reddit --network-alias=comment1 -e COMMENT_DATABASE_HOST
 docker run -d --network=reddit -p 9292:9292 -e POST_SERVICE_HOST=post1 -e COMMENT_SERVICE_HOST=comment1 olegluschenko/ui:1.0
 (http://serverascode.com/2014/05/29/environment-variables-with-docker.html)
 - Пересобран образ ui (сделан на основе ubuntu16.04), итоговый размер образа уменьшился почти вдвое.
-- Выпо
+- Выполнено второе задание со *. Создан образ на основе alpine. Итоговый образ уменьшился вдвое по сравнению с образом на основе Ubuntu 16.04
 - Примонтирован volume к последнему образу mongodb. После этого даже после перезапуска образов посты, хранящиеся в БД, не теряются, т.к. хранятся на volum'е.
 
 # OlegGlushchenko_microservices_2
