@@ -1,3 +1,9 @@
+# OlegGlushchenko_microservices_6
+ - Создан проект example2, к нему подключен runner из проекта прошлой практики
+ - Созданы статические окружения dev, prod, stage. Созданы отработан способ создания динамических окружений.
+ - Выполнено задание со *, создано окружение с кнопкой удаления
+
+
 # OlegGlushchenko_microservices_5
 - С использованием docker-compose.yml, запущен omnibus образ GitlabCI. 
 - Запущен и зарегистрирован Runner
