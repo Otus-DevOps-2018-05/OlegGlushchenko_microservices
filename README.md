@@ -1,3 +1,15 @@
+# OlegGlushchenko_microservices_7
+ - Подготовлено окружение и создан docker-образ Prometheus
+ - Ппрошло знакомство с веб-интерфейсом Prometheus
+ - Проведена работа с образами:
+    - изучен интерфейс и возможности Prometheus
+    - изучена работа с метриками (добавление, удаление)
+ - Созданы образы и запушены в DockerHub. Ссылки на docker образы:
+    https://hub.docker.com/r/olegluschenko/ui/
+    https://hub.docker.com/r/olegluschenko/post/
+    https://hub.docker.com/r/olegluschenko/comment/
+    https://hub.docker.com/r/olegluschenko/prometheus/
+
 # OlegGlushchenko_microservices_6
  - Создан проект example2, к нему подключен runner из проекта прошлой практики
  - Созданы статические окружения dev, prod, stage. Созданы отработан способ создания динамических окружений.
