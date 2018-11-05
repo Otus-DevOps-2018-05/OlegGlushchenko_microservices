@@ -1,3 +1,16 @@
+# OlegGlushchenko_microservices_8
+ - Разделили мониторинг и приложения (из docker-compose.yml выделили часть, отвечающую за мониторинг)
+ - Интегрировали cAdvisor в Prometheus для сбора метрик контейнеров
+ - Интегрировали Grafana к связке cAdvisor+Prometheus для визуализации метрик
+ - Собрали метрики приложения и бизнес метрики
+ - Добавили интеграцию Alertmanager к Prometheus.  
+ - Созданы образы и запушены в DockerHub. Ссылки на docker образы:
+  - https://hub.docker.com/r/olegluschenko/ui/
+  - https://hub.docker.com/r/olegluschenko/comment/
+  - https://hub.docker.com/r/olegluschenko/post/
+  - https://hub.docker.com/r/olegluschenko/prometheus/
+  - https://hub.docker.com/r/olegluschenko/alertmanager/
+
 # OlegGlushchenko_microservices_7
  - Подготовлено окружение и создан docker-образ Prometheus
  - Прошло знакомство с веб-интерфейсом Prometheus
