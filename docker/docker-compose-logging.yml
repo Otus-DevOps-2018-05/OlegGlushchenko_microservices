@@ -1,0 +1,30 @@
+version: '3'
+services:
+  fluentd:
+    image: ${USERNAME}/fluentd
+    ports:
+      - "24224:24224"
+      - "24224:24224/udp"
+    networks:
+      - front_net
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.4.3
+    container_name: elasticsearch
+    expose:
+      - 9200
+    ports:
+      - "9200:9200"
+    networks:
+      - front_net
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:6.4.3
+    container_name: kibana
+    ports:
+      - "5601:5601"
+    networks:
+      - front_net
+
+networks:
+  front_net:
