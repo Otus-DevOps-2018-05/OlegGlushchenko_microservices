@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM ruby:2.2-alpine
 RUN apk add --update \
     ruby \
     ruby-dev \
