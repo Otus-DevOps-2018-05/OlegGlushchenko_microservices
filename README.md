@@ -1,3 +1,10 @@
+# OlegGlushchenko_microservices_11
+  - Установлен minikube, kubectl. Подготовлено локальное окружение kubernetes;
+  - Равернут сервиса reddit в локальном окружении (использованы deployments, services, namespaces);
+  - Опробованы основные возможности kubernetes dashboard;
+  - Развернут кластер в GKE, в котором запущено ранее подготовленное приложение reddit;
+  - Заапущен kubernetes dashboard в GKE;
+
 # OlegGlushchenko_microservices_10
   - созданы собственные файлы с манифестами Deployment для сервисов приложения;
   - пройден туториал Kubernetes The Hard way;
