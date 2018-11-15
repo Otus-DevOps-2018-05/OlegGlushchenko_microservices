@@ -1,6 +1,15 @@
 # OlegGlushchenko_microservices_11
+  - Использованы абстракции Kubernetes: NodePort, LoadBalancer, Ingress для работы приложения Reddit;
+  - Внедрена защита сервиса Reddit с помощью TLS (secret и TLS termination). Сервис работает через https;
+  - Внедрена NetworkPolicy для разделения достуа БД mongo. Доступ разрешен только сервисам post и comment;
+  - Внедрено удаленное хранение данных (вне контейнера) с помощью абстракций Kubernetes:
+    - gcePersistentDisk - целый диск;
+    - PersistentVolume - раздел диска;
+  - Реализовано динамическое подключение дисков с помощью PersistentVolumeClaim и StorageClass;
+
+# OlegGlushchenko_microservices_11
   - Установлен minikube, kubectl. Подготовлено локальное окружение kubernetes;
-  - Равернут сервиса reddit в локальном окружении (использованы deployments, services, namespaces);
+  - Равернут сервис reddit в локальном окружении (использованы deployments, services, namespaces);
   - Опробованы основные возможности kubernetes dashboard;
   - Развернут кластер в GKE, в котором запущено ранее подготовленное приложение reddit;
   - Заапущен kubernetes dashboard в GKE;
