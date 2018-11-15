@@ -1,4 +1,4 @@
-# OlegGlushchenko_microservices_11
+# OlegGlushchenko_microservices_12
   - Использованы абстракции Kubernetes: NodePort, LoadBalancer, Ingress для работы приложения Reddit;
   - Внедрена защита сервиса Reddit с помощью TLS (secret и TLS termination). Сервис работает через https;
   - Внедрена NetworkPolicy для разделения достуа БД mongo. Доступ разрешен только сервисам post и comment;
