@@ -1,3 +1,10 @@
+# OlegGlushchenko_microservices_14
+  - Через Helm установили Prometheus в Kubernetes;;
+  - Настроили Prometheus для сбора метрик:
+  - Установили Grafana в Kubernetes;
+  - Установили и настроили Dashboard-ы с использованием механизма Templating Grafana;
+  - Развернули системы логирования (EFK) в Kubernetes.
+  
 # OlegGlushchenko_microservices_13
   - Установили пакетный менеджер для Kubernetes Helm;
   - Упаковали манифесты для UI-сервиса в Chart-пакет для разворачивания сервиса через Helm;
