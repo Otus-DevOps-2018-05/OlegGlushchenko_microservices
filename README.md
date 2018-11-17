@@ -1,3 +1,12 @@
+# OlegGlushchenko_microservices_13
+  - Установили пакетный менеджер для Kubernetes Helm;
+  - Упаковали манифесты для UI-сервиса в Chart-пакет для разворачивания сервиса через Helm;
+  - Параметризовали Chart-пакет для сервиса UI, определили параметры в values.yaml, завершив тем самым разворачивание сервиса с помощью template'ов;
+  - По образу ранее подготовленного Chart-пакета для UI подготовили Chart-пакеты для сервисов Post и Comment
+  - Развернутли GitLab в Kubernetes;
+  - Настроили запуск отдельного окружения в Kubernetes по коммиту в feature-ветку, с возможностью удаления окружения вручную;
+  - Создали окружения staging и production для работы приложения.
+
 # OlegGlushchenko_microservices_12
   - Использованы абстракции Kubernetes: NodePort, LoadBalancer, Ingress для работы приложения Reddit;
   - Внедрена защита сервиса Reddit с помощью TLS (secret и TLS termination). Сервис работает через https;
